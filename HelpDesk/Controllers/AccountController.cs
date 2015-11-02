@@ -5,6 +5,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using HelpDesk.Data.Entitidades;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
@@ -72,6 +73,8 @@ namespace HelpDesk.Controllers
             {
                 return View(model);
             }
+
+            //var user =  UserManager.FindByEmail(email);
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
